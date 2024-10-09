@@ -1,5 +1,11 @@
-template-repository (1.0-1) unstable; urgency=medium
+golang-k8s-apimachinery (0.29.0-2) unstable; urgency=medium
 
-  * Initial release
+  * Source-only upload 
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Jérémy Lal <kapouer@melix.org>  Sun, 07 Jan 2024 02:39:33 +0100
+
+golang-k8s-apimachinery (0.29.0-1) unstable; urgency=medium
+
+  * Initial release (Closes: #1012720)
+
+ -- Jérémy Lal <kapouer@melix.org>  Sun, 31 Dec 2023 13:40:19 +0100
