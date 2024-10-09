@@ -1,4 +1,9 @@
 #!/usr/bin/make -f
 
 %:
-	dh $@
+	dh $@ --builddirectory=_build --buildsystem=golang
+
+execute_before_dh_auto_test:
+	# these tests fail because they need to load a big swagger.json file
+	# that is found in github.com/kubernetes/kubernetes
+	find _build/src/k8s.io/apimachinery/pkg/util/managedfields -name "*_test.go" -delete
